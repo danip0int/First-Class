@@ -1,0 +1,328 @@
+@import "global";
+@import "fuentes";
+@import "responsive";
+
+.navbar {
+  @include caja-flex(space-between, center, wrap);
+  ul {
+    display: flex;
+    padding: 0;
+    a {
+      margin-right: 9px;
+      padding: 10px;
+      font-size: 2rem;
+    }
+    a:hover {
+      transform: scale(1.2);
+    }
+  }
+  #navbarSupportedContent {
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+  }
+}
+.navbar-brand {
+  font-size: 3.5rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+}
+
+/*Contenido HOME*/
+.titulosHome {
+  background-color: #0e0036d8;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  border-radius: 20px;
+}
+
+.animacion-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 25px #666;
+  cursor: pointer;
+}
+.mySlide {
+  margin-top: 120px;
+  margin-bottom: 50px;
+  .carousel-item {
+    background: rgb(0, 0, 0);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+    .container {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .overlay-image {
+      position: relative;
+      background-position: center;
+      background-size: cover;
+      opacity: 0.7;
+    }
+    h1 {
+      color: #ffffff;
+      margin: 0 0 10px;
+    }
+    p {
+      font-size: 30px;
+      margin: 0;
+      color: #ffffff;
+      opacity: 0;
+    }
+  }
+  .carousel-item.active h1 {
+    animation: fadeInLeft 1s ease forwards;
+  }
+  .carousel-item.active p {
+    animation: fadeInRight 1s ease forwards;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    height: 60px;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    z-index: 3;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  .carousel-control-next {
+    right: 100px;
+  }
+  .carousel-control-prev {
+    left: 100px;
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.btn-excursion {
+  @extend .btn-1;
+  background-color: rgb(80, 203, 224);
+}
+.btn-contacto {
+  @extend .btn-1;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 0px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: rgb(0, 0, 0);
+}
+.tituloSeparador {
+  width: 100%;
+  color: rgb(0, 0, 0);
+}
+.container-titulo{
+  max-width: 1700px;
+  margin: auto;
+  margin-top: 80px;
+}
+.tituloSeparador hr {
+  border: none;
+  height: 1px;
+  background-color: rgb(0, 0, 0);
+}
+/*Finaliza pagina HOME*/
+
+/*Comienza pagina EXCURSIONES*/
+#videoExcursion {
+  position: relative;
+  margin-top: 120px;
+  width: 100%;
+  height: 750px;
+  color: white;
+  background: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .overlay-video {
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.65;
+  }
+}
+.bloqueExcursion {
+  .imgExcursion1 {
+    justify-content: start;
+    left: 150px;
+  }
+  .imgExcursion2 {
+    justify-content: end;
+    right: 150px;
+  }
+  .descripcionExc {
+    width: 20%;
+  }
+  .tituloExcursion {
+    font-size: 70px;
+  }
+}
+/*Finaliza pagina EXCURSIONES*/
+
+/*Comienza pagina CONTACTO*/
+
+#bloqueInfo {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+#bannerContacto {
+  margin-top: 140px;
+  width: 100%;
+  .banner-item {
+    background: rgb(0, 0, 0);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 70px;
+  }
+  .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .overlay-banner {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+  }
+  img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+  }
+}
+/*Finaliza pagina CONTACTO*/
+
+/*FOOTER*/
+
+.footer {
+  width: 100%;
+  height: auto;
+
+  padding: 50px 0px;
+  margin-top: 80px;
+  background-color: #0e0036;
+}
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.box-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.box-footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  color: white;
+}
+
+.box-footer h2 {
+  margin-bottom: 5px;
+  color: #cb0d3d;
+}
+.box-footer h1 {
+  margin-bottom: 5px;
+  color: #cb0d3d;
+}
+.box-footer hr {
+  border: none;
+  height: 1px;
+  background-color: white;
+}
+.box-footer a {
+  margin-top: 10px;
+  color: #ffffff;
+}
+.box-footer a:hover {
+  opacity: 0.8;
+}
+
+.box-footer a .fa-brands {
+  font-size: 25px;
+}
+.box-footer i {
+  padding-right: 3px;
+}
+.box-copyright {
+  max-width: 1300px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+.box-copyright p {
+  margin-top: 10px;
+  color: white;
+}
+.box-copyright hr {
+  border: none;
+  height: 1px;
+  background-color: white;
+}
