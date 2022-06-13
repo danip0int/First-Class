@@ -53,10 +53,11 @@ img {
   border: none;
   border-radius: 15px;
   cursor: pointer;
-  margin-right: 80px;
-  margin-left: 80px;
+  margin: auto;
   margin-top: 15px;
   margin-bottom: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-size: 1.5rem;
   font-weight: 500;
   color: rgb(255, 255, 255);
@@ -71,7 +72,7 @@ img {
   background-color: #0e0036;
 }
 .bg-color2 {
-  background-color: #39A2DB;
+  background-color: #2900A0B5
 }
 .bg-color3 {
   background-color: #6b6a6a05;
@@ -85,4 +86,18 @@ img {
 .bg-cards{
   background-color: #ffffff;
 }
-
+.bg-separador{
+  position: relative;
+  color: black;
+  background-color:#6b6a6a17 ;
+  height: 250px;
+  border-bottom: 2px solid #716f751d;
+  
+  h2{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}

@@ -50,10 +50,11 @@ img {
   border: none;
   border-radius: 15px;
   cursor: pointer;
-  margin-right: 80px;
-  margin-left: 80px;
+  margin: auto;
   margin-top: 15px;
   margin-bottom: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-size: 1.5rem;
   font-weight: 500;
   color: white;
@@ -66,7 +67,7 @@ img {
 }
 
 .bg-color2 {
-  background-color: #39A2DB;
+  background-color: #2900A0B5;
 }
 
 .bg-color3 {
@@ -83,6 +84,22 @@ img {
 
 .bg-cards {
   background-color: #ffffff;
+}
+
+.bg-separador {
+  position: relative;
+  color: black;
+  background-color: #6b6a6a17;
+  height: 250px;
+  border-bottom: 2px solid #716f751d;
+}
+
+.bg-separador h2 {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .font-light {
@@ -255,6 +272,7 @@ img {
 }
 
 .navbar ul a:hover {
+  transition: all 0.5s;
   transform: scale(1.2);
 }
 
@@ -269,15 +287,8 @@ img {
 }
 
 /*Contenido HOME*/
-.titulosHome {
-  background-color: #0e0036d8;
-  padding-left: 30px;
-  padding-right: 30px;
-  color: white;
-  border-radius: 20px;
-}
-
 .animacion-hover:hover {
+  transition: all 0.6s;
   transform: translateY(-10px);
   box-shadow: 0px 0px 25px #666;
   cursor: pointer;
@@ -286,6 +297,7 @@ img {
 .mySlide {
   margin-top: 120px;
   margin-bottom: 50px;
+  border-bottom: 2px solid #2800a0;
 }
 
 .mySlide .carousel-item {
@@ -399,14 +411,21 @@ img {
   background-color: black;
 }
 
+.titulosHome {
+  background-color: #0e0036d8;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  border-radius: 20px;
+}
+
 .tituloSeparador {
   width: 100%;
   color: black;
 }
 
 .container-titulo {
-  max-width: 1700px;
-  margin: auto;
+  padding-left: 10px;
   margin-top: 80px;
 }
 
@@ -457,22 +476,8 @@ img {
   opacity: 0.65;
 }
 
-.bloqueExcursion .imgExcursion1 {
-  justify-content: start;
-  left: 150px;
-}
-
-.bloqueExcursion .imgExcursion2 {
-  justify-content: end;
-  right: 150px;
-}
-
-.bloqueExcursion .descripcionExc {
-  width: 20%;
-}
-
-.bloqueExcursion .tituloExcursion {
-  font-size: 70px;
+.bloqueExcursion {
+  overflow: hidden;
 }
 
 /*Finaliza pagina EXCURSIONES*/
@@ -489,10 +494,11 @@ img {
 
 #bannerContacto .banner-item {
   background: black;
-  background-position: center;
+  background-image: url("/assets/beach3.jpg");
+  background-position-y: 40%;
   background-size: cover;
   position: relative;
-  height: 70px;
+  height: 300px;
 }
 
 #bannerContacto .container {
@@ -503,17 +509,15 @@ img {
   text-align: center;
 }
 
+#bannerContacto .container h1 {
+  text-shadow: 0px 0px 15px black;
+}
+
 #bannerContacto .overlay-banner {
   position: relative;
   background-position: center;
   background-size: cover;
-  opacity: 0.7;
-}
-
-#bannerContacto img {
-  width: 100%;
-  height: 300px;
-  background-size: cover;
+  opacity: 0.1;
 }
 
 /*Finaliza pagina CONTACTO*/
@@ -522,7 +526,6 @@ img {
   width: 100%;
   height: auto;
   padding: 50px 0px;
-  margin-top: 80px;
   background-color: #0e0036;
 }
 
@@ -532,7 +535,6 @@ img {
   justify-content: space-between;
   max-width: 1300px;
   margin: auto;
-  margin-top: 80px;
 }
 
 .box-footer {
