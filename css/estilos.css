@@ -1,4 +1,298 @@
+/*Contenido HOME*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+.mySlide {
+  margin-top: 120px;
+  margin-bottom: 50px;
+  border-bottom: 2px solid #2800a0;
+}
+
+.mySlide .carousel-item {
+  background: black;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.mySlide .carousel-item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.mySlide .carousel-item .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.mySlide .carousel-item .overlay-image {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.mySlide .carousel-item h1 {
+  color: #ffffff;
+  margin: 0 0 10px;
+}
+
+.mySlide .carousel-item p {
+  font-size: 30px;
+  margin: 0;
+  color: #ffffff;
+  opacity: 0;
+}
+
+.mySlide .carousel-item.active h1 {
+  animation: fadeInLeft 1s ease forwards;
+}
+
+.mySlide .carousel-item.active p {
+  animation: fadeInRight 1s ease forwards;
+}
+
+.mySlide .carousel-control-next,
+.mySlide .carousel-control-prev {
+  height: 60px;
+  width: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  z-index: 3;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.mySlide .carousel-control-next {
+  right: 100px;
+}
+
+.mySlide .carousel-control-prev {
+  left: 100px;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.titulosHome {
+  background-color: #0e0036d8;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: white;
+  border-radius: 20px;
+}
+
+.tituloSeparador {
+  width: 100%;
+  color: black;
+}
+
+.container-titulo {
+  padding-left: 10px;
+  margin-top: 80px;
+}
+
+.tituloSeparador hr {
+  border: none;
+  height: 1px;
+  background-color: black;
+}
+
+/*Comienza pagina EXCURSIONES*/
+#videoExcursion {
+  position: relative;
+  margin-top: 120px;
+  width: 100%;
+  height: 750px;
+  color: white;
+  background: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#videoExcursion video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#videoExcursion .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#videoExcursion .overlay-video {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.65;
+}
+
+.bloqueExcursion {
+  overflow: hidden;
+}
+
+.bloqueExcursion .imgExcursion1 {
+  justify-content: center;
+  align-items: center;
+}
+
+.bloqueExcursion .imgExcursion2 {
+  justify-content: center;
+}
+
+.bloqueExcursion .descripcionExc {
+  width: 20%;
+}
+
+.bloqueExcursion .tituloExcursion {
+  font-size: 70px;
+}
+
+.bloqueExcursion .btn-excursion {
+  background-color: #50cbe0;
+}
+
+/*Comienza pagina CONTACTO*/
+#bannerContacto {
+  margin-top: 135px;
+  width: 100%;
+}
+
+#bannerContacto .banner-item {
+  background: black;
+  background-image: url("/assets/destino.jpg");
+  background-position-y: 50%;
+  background-size: cover;
+  position: relative;
+  height: 400px;
+  border-radius: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#bannerContacto .container {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#bannerContacto .container h1 {
+  text-shadow: 0px 0px 15px black;
+}
+
+#bannerContacto .overlay-banner {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+#bannerContacto .kenburns-top {
+  animation: kenburns-top 5s cubic-bezier(0.755, 0.05, 0.855, 0.06) reverse both;
+}
+
+@keyframes kenburns-top {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+  }
+  100% {
+    transform: scale(1.25) translateY(-15px);
+    transform-origin: top;
+  }
+}
+
+#bloqueInfo {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+#bloqueInfo hr {
+  margin-top: 40px;
+}
+
+#bloqueInfo .redesContacto {
+  margin-top: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bloqueInfo .nuestrosDatos {
+  color: white;
+  border-radius: 30px;
+}
+
+#bloqueInfo .nuestrosDatos hr {
+  color: white;
+}
+
+#bloqueInfo .nuestrosDatos p {
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+#bloqueInfo .formulario-contacto {
+  border-radius: 30px;
+}
+
+#bloqueInfo .formulario-contacto label {
+  padding-top: 5px;
+}
+
+.btn-contacto {
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 0px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: black;
+}
+
+/*BODY*/
 body {
   margin: 0;
   padding: 0;
@@ -23,13 +317,8 @@ ul {
 
 a {
   text-decoration: none;
-  color: #0998ff;
+  color: #2900A0B5;
   font-size: 2rem;
-}
-
-img {
-  width: 100%;
-  height: auto;
 }
 
 /*HEADER*/
@@ -44,9 +333,88 @@ img {
   height: 120px;
 }
 
+/*FOOTER*/
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 50px 0px;
+  background-color: #0e0036;
+}
+
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.box-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.box-footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  color: white;
+}
+
+.box-footer h2 {
+  margin-bottom: 5px;
+  color: #cb0d3d;
+}
+
+.box-footer h1 {
+  margin-bottom: 5px;
+  color: #cb0d3d;
+}
+
+.box-footer hr {
+  border: none;
+  height: 1px;
+  background-color: white;
+}
+
+.box-footer a {
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.box-footer a:hover {
+  opacity: 0.8;
+}
+
+.box-footer a .fa-brands {
+  font-size: 25px;
+}
+
+.box-footer i {
+  padding-right: 3px;
+}
+
+.box-copyright {
+  max-width: 1300px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.box-copyright p {
+  margin-top: 10px;
+  color: white;
+}
+
+.box-copyright hr {
+  border: none;
+  height: 1px;
+  background-color: white;
+}
+
 /*MIXIN*/
 /*EXTENDED*/
-.btn-1, .btn, .btn-excursion, .btn-contacto {
+.btn-1, .bloqueExcursion .btn-excursion, .btn-contacto, .btn {
   border: none;
   border-radius: 15px;
   cursor: pointer;
@@ -75,7 +443,7 @@ img {
 }
 
 .bg-color4 {
-  background-color: #000000;
+  background-color: #2800a054;
 }
 
 .bg-color5 {
@@ -100,6 +468,13 @@ img {
   top: 30%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.animacion-hover:hover {
+  transition: all 0.6s;
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 25px #666;
+  cursor: pointer;
 }
 
 .font-light {
@@ -284,319 +659,5 @@ img {
 
 .navbar-dark .navbar-nav .nav-link {
   color: white;
-}
-
-/*Contenido HOME*/
-.animacion-hover:hover {
-  transition: all 0.6s;
-  transform: translateY(-10px);
-  box-shadow: 0px 0px 25px #666;
-  cursor: pointer;
-}
-
-.mySlide {
-  margin-top: 120px;
-  margin-bottom: 50px;
-  border-bottom: 2px solid #2800a0;
-}
-
-.mySlide .carousel-item {
-  background: black;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-.mySlide .carousel-item:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
-
-.mySlide .carousel-item .container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.mySlide .carousel-item .overlay-image {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.7;
-}
-
-.mySlide .carousel-item h1 {
-  color: #ffffff;
-  margin: 0 0 10px;
-}
-
-.mySlide .carousel-item p {
-  font-size: 30px;
-  margin: 0;
-  color: #ffffff;
-  opacity: 0;
-}
-
-.mySlide .carousel-item.active h1 {
-  animation: fadeInLeft 1s ease forwards;
-}
-
-.mySlide .carousel-item.active p {
-  animation: fadeInRight 1s ease forwards;
-}
-
-.mySlide .carousel-control-next,
-.mySlide .carousel-control-prev {
-  height: 60px;
-  width: 60px;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 1;
-  z-index: 3;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  transition: all 0.3s ease;
-}
-
-.mySlide .carousel-control-next {
-  right: 100px;
-}
-
-.mySlide .carousel-control-prev {
-  left: 100px;
-}
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-150px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(150px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-.btn-excursion {
-  background-color: #50cbe0;
-}
-
-.btn-contacto {
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 0px;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 8px;
-  font-size: 2rem;
-  font-weight: 500;
-  background-color: black;
-}
-
-.titulosHome {
-  background-color: #0e0036d8;
-  padding-left: 30px;
-  padding-right: 30px;
-  color: white;
-  border-radius: 20px;
-}
-
-.tituloSeparador {
-  width: 100%;
-  color: black;
-}
-
-.container-titulo {
-  padding-left: 10px;
-  margin-top: 80px;
-}
-
-.tituloSeparador hr {
-  border: none;
-  height: 1px;
-  background-color: black;
-}
-
-/*Finaliza pagina HOME*/
-/*Comienza pagina EXCURSIONES*/
-#videoExcursion {
-  position: relative;
-  margin-top: 120px;
-  width: 100%;
-  height: 750px;
-  color: white;
-  background: black;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-#videoExcursion video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-#videoExcursion .container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-#videoExcursion .overlay-video {
-  position: absolute;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.65;
-}
-
-.bloqueExcursion {
-  overflow: hidden;
-}
-
-/*Finaliza pagina EXCURSIONES*/
-/*Comienza pagina CONTACTO*/
-#bloqueInfo {
-  margin-top: 80px;
-  margin-bottom: 100px;
-}
-
-#bannerContacto {
-  margin-top: 140px;
-  width: 100%;
-}
-
-#bannerContacto .banner-item {
-  background: black;
-  background-image: url("/assets/beach3.jpg");
-  background-position-y: 40%;
-  background-size: cover;
-  position: relative;
-  height: 300px;
-}
-
-#bannerContacto .container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-#bannerContacto .container h1 {
-  text-shadow: 0px 0px 15px black;
-}
-
-#bannerContacto .overlay-banner {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.1;
-}
-
-/*Finaliza pagina CONTACTO*/
-/*FOOTER*/
-.footer {
-  width: 100%;
-  height: auto;
-  padding: 50px 0px;
-  background-color: #0e0036;
-}
-
-.container-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1300px;
-  margin: auto;
-}
-
-.box-footer {
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-}
-
-.box-footer .terms {
-  max-width: 350px;
-  margin-top: 20px;
-  color: white;
-}
-
-.box-footer h2 {
-  margin-bottom: 5px;
-  color: #cb0d3d;
-}
-
-.box-footer h1 {
-  margin-bottom: 5px;
-  color: #cb0d3d;
-}
-
-.box-footer hr {
-  border: none;
-  height: 1px;
-  background-color: white;
-}
-
-.box-footer a {
-  margin-top: 10px;
-  color: #ffffff;
-}
-
-.box-footer a:hover {
-  opacity: 0.8;
-}
-
-.box-footer a .fa-brands {
-  font-size: 25px;
-}
-
-.box-footer i {
-  padding-right: 3px;
-}
-
-.box-copyright {
-  max-width: 1300px;
-  margin: auto;
-  text-align: center;
-  padding: 0px 40px;
-}
-
-.box-copyright p {
-  margin-top: 10px;
-  color: white;
-}
-
-.box-copyright hr {
-  border: none;
-  height: 1px;
-  background-color: white;
 }
 /*# sourceMappingURL=estilos.css.map */
