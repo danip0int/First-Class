@@ -4,6 +4,7 @@
   #bannerContacto {
     margin-top: 135px;
     width: 100%;
+    overflow: hidden;
     .banner-item {
       background: rgb(0, 0, 0);
       background-image: url("/assets/destino.jpg");
@@ -18,7 +19,7 @@
     .container {
       position: absolute;
       left: 50%;
-      top: 35%;
+      top: 45%;
       transform: translate(-50%, -50%);
       text-align: center;
     }

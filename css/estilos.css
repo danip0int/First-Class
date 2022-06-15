@@ -40,14 +40,12 @@
 
 .mySlide .carousel-item h1 {
   color: #ffffff;
-  margin: 0 0 10px;
 }
 
 .mySlide .carousel-item p {
-  font-size: 30px;
+  font-size: 25px;
   margin: 0;
   color: #ffffff;
-  opacity: 0;
 }
 
 .mySlide .carousel-item.active h1 {
@@ -60,8 +58,8 @@
 
 .mySlide .carousel-control-next,
 .mySlide .carousel-control-prev {
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
   z-index: 3;
@@ -72,11 +70,11 @@
 }
 
 .mySlide .carousel-control-next {
-  right: 100px;
+  right: 20px;
 }
 
 .mySlide .carousel-control-prev {
-  left: 100px;
+  left: 20px;
 }
 
 @keyframes fadeInLeft {
@@ -116,12 +114,12 @@
 
 .container-titulo {
   padding-left: 10px;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .tituloSeparador hr {
   border: none;
-  height: 1px;
+  height: 2px;
   background-color: black;
 }
 
@@ -130,7 +128,7 @@
   position: relative;
   margin-top: 120px;
   width: 100%;
-  height: 750px;
+  height: 650px;
   color: white;
   background: black;
   top: 0;
@@ -165,25 +163,21 @@
   opacity: 0.65;
 }
 
+.tituloExcursion {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 .bloqueExcursion {
   overflow: hidden;
 }
 
 .bloqueExcursion .imgExcursion1 {
   justify-content: center;
-  align-items: center;
 }
 
 .bloqueExcursion .imgExcursion2 {
   justify-content: center;
-}
-
-.bloqueExcursion .descripcionExc {
-  width: 20%;
-}
-
-.bloqueExcursion .tituloExcursion {
-  font-size: 70px;
 }
 
 .bloqueExcursion .btn-excursion {
@@ -194,6 +188,7 @@
 #bannerContacto {
   margin-top: 135px;
   width: 100%;
+  overflow: hidden;
 }
 
 #bannerContacto .banner-item {
@@ -211,7 +206,7 @@
 #bannerContacto .container {
   position: absolute;
   left: 50%;
-  top: 35%;
+  top: 45%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -306,7 +301,6 @@ body {
 }
 
 html {
-  font-size: 70%;
   box-sizing: border-box;
 }
 
@@ -318,7 +312,6 @@ ul {
 a {
   text-decoration: none;
   color: #2900A0B5;
-  font-size: 2rem;
 }
 
 /*HEADER*/
@@ -327,7 +320,6 @@ a {
   align-items: center;
   position: fixed;
   z-index: 10;
-  top: 0;
   border-top: 8px solid #cb0d3d;
   width: 100%;
   height: 120px;
@@ -344,7 +336,7 @@ a {
 .container-footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 1300px;
   margin: auto;
 }
@@ -423,7 +415,7 @@ a {
   margin-bottom: 8px;
   padding-left: 30px;
   padding-right: 30px;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: white;
   background-color: #cb0d3d;
@@ -502,19 +494,19 @@ a {
 }
 
 .font-h1 {
-  font-size: 6rem;
+  font-size: 3rem;
 }
 
 .font-h2 {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 .font-h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .font-h4 {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .font-p {
@@ -525,114 +517,114 @@ a {
   font-size: 18px;
 }
 
-/*MEDIA QUERIE PANTALLA XL*/
-@media all and (max-width: 1250px) {
+@media all and (min-width: 992px) {
   .mySlide .carousel-control-next,
   .mySlide .carousel-control-prev {
     height: 50px;
     width: 50px;
-    border-radius: 40%;
   }
   .mySlide .carousel-item h1 {
-    font-size: 55px;
-  }
-  .mySlide .carousel-item p {
-    font-size: 19px;
-  }
-  .mySlide .carousel-control-next {
-    right: 40px !important;
-  }
-  .mySlide .carousel-control-prev {
-    left: 40px !important;
-  }
-  .bloqueExcursion .imgExcursion1 {
-    justify-content: center !important;
-    left: 0px !important;
-  }
-  .bloqueExcursion .imgExcursion2 {
-    justify-content: center !important;
-    right: 0px !important;
-  }
-}
-
-/*MEDIA QUERIE PANTALLA LG*/
-@media all and (max-width: 992px) {
-  .mySlide {
-    margin-top: 85px !important;
-  }
-  .mySlide .carousel-control-next,
-  .mySlide .carousel-control-prev {
-    height: 30px !important;
-    width: 30px !important;
-    border-radius: 20%;
-  }
-  .mySlide .carousel-item h1 {
-    font-size: 47px;
+    font-size: 3rem;
   }
   .mySlide .carousel-item p {
     font-size: 25px;
   }
   .mySlide .carousel-control-next {
-    right: 30px !important;
+    right: 50px;
   }
   .mySlide .carousel-control-prev {
-    left: 30px !important;
+    left: 50px;
   }
-  #navbarSupportedContent {
-    position: relative !important;
-    text-align: center !important;
+  .navbar ul {
+    display: flex;
+    padding: 0;
+  }
+  .navbar ul a {
+    margin-right: 9px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  .navbar #navbarSupportedContent {
+    position: absolute;
+  }
+  .btn-1, .bloqueExcursion .btn-excursion, .btn-contacto, .btn {
+    font-size: 1.2rem;
+  }
+  .redesContacto h3 {
+    font-size: 1.8rem;
+  }
+  .redesContacto a {
+    font-size: 1.5rem;
+  }
+}
+
+/*MEDIA QUERIE PANTALLA XL*/
+@media all and (min-width: 1200px) {
+  .mySlide .carousel-control-next,
+  .mySlide .carousel-control-prev {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  .mySlide .carousel-item h1 {
+    font-size: 3.5rem;
+  }
+  .mySlide .carousel-item p {
+    font-size: 30px;
+  }
+  .mySlide .carousel-control-next {
+    right: 80px;
+  }
+  .mySlide .carousel-control-prev {
+    left: 80px;
+  }
+  .tituloSeparador h2 {
+    font-size: 3rem;
   }
   .bloqueExcursion .imgExcursion1 {
-    justify-content: center !important;
+    justify-content: center;
     left: 0px;
   }
   .bloqueExcursion .imgExcursion2 {
-    justify-content: center !important;
+    justify-content: center;
     right: 0px;
   }
-  #header {
-    height: auto !important;
+  #videoExcursion {
+    height: 750px;
   }
 }
 
-/*MEDIA QUERIE PANTALLA MD*/
-@media all and (max-width: 768px) {
-  .mySlide {
-    margin-top: 50px;
-    margin-bottom: 0px;
-  }
+/*MEDIA QUERIE PANTALLA XXL*/
+@media all and (min-width: 1400px) {
   .mySlide .carousel-control-next,
   .mySlide .carousel-control-prev {
-    height: 30px;
-    width: 30px;
-    border-radius: 30%;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
   }
-  .mySlide .container h1 {
-    font-size: 30px;
+  .mySlide .carousel-item h1 {
+    font-size: 4rem;
   }
-  .mySlide .container p {
-    font-size: 15px !important;
+  .mySlide .carousel-item p {
+    font-size: 35px;
   }
   .mySlide .carousel-control-next {
-    right: 5px !important;
+    right: 100px;
   }
   .mySlide .carousel-control-prev {
-    left: 5px !important;
+    left: 100px;
   }
-  h2 {
-    font-size: 3rem !important;
+  .bloqueExcursion .imgExcursion1 {
+    justify-content: cen0er;
+    left: 0px;
   }
-  .wrap-element {
-    flex-wrap: wrap !important;
-    justify-content: center !important;
+  .bloqueExcursion .imgExcursion2 {
+    justify-content: cen0er;
+    right: 0px;
   }
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  #videoExcursion {
+    height: 750px;
+  }
 }
 
 .navbar ul {
@@ -643,7 +635,8 @@ a {
 .navbar ul a {
   margin-right: 9px;
   padding: 10px;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .navbar ul a:hover {
@@ -652,9 +645,7 @@ a {
 }
 
 .navbar #navbarSupportedContent {
-  position: absolute;
-  right: 0px;
-  bottom: 5px;
+  position: relative;
 }
 
 .navbar-dark .navbar-nav .nav-link {

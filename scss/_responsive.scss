@@ -1,111 +1,127 @@
-/*MEDIA QUERIE PANTALLA XL*/
 
-@media all and (max-width: 1250px) {
+// /*MEDIA QUERIE PANTALLA LG*/
+
+@media all and (min-width: 992px) {
   .mySlide {
     .carousel-control-next,
     .carousel-control-prev {
       height: 50px;
       width: 50px;
-      border-radius: 40%;
     }
     .carousel-item h1 {
-      font-size: 55px;
-    }
-    .carousel-item p {
-      font-size: 19px;
-    }
-    .carousel-control-next {
-      right: 40px !important;
-    }
-    .carousel-control-prev {
-      left: 40px !important;
-    }
-  }
-  .bloqueExcursion {
-    .imgExcursion1 {
-      justify-content: center !important;
-      left: 0px !important;
-    }
-    .imgExcursion2 {
-      justify-content: center !important;
-      right: 0px !important;
-    }
-  }
-}
-
-/*MEDIA QUERIE PANTALLA LG*/
-
-@media all and (max-width: 992px) {
-  .mySlide {
-    margin-top: 85px !important;
-    .carousel-control-next,
-    .carousel-control-prev {
-      height: 30px !important;
-      width: 30px !important;
-      border-radius: 20%;
-    }
-    .carousel-item h1 {
-      font-size: 47px;
+      font-size: 3rem;
     }
     .carousel-item p {
       font-size: 25px;
     }
     .carousel-control-next {
-      right: 30px !important;
+      right: 50px;
     }
     .carousel-control-prev {
-      left: 30px !important;
+      left: 50px;
     }
   }
-  #navbarSupportedContent {
-    position: relative !important;
-    text-align: center !important;
+  .navbar {
+    ul {
+      display: flex;
+      padding: 0;
+      a {
+        margin-right: 9px;
+        padding: 10px;
+        font-size: 1rem;
+      }
+    }
+    #navbarSupportedContent {
+      position: absolute;
+    }
+  }
+  .btn-1{
+    font-size: 1.2rem;
+  }
+  .redesContacto{
+    h3{
+      font-size: 1.8rem;
+    }
+    a{
+      font-size: 1.5rem;
+    }
+  }
+}
+/*MEDIA QUERIE PANTALLA XL*/
+
+@media all and (min-width: 1200px) {
+  .mySlide {
+    .carousel-control-next,
+    .carousel-control-prev {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+    .carousel-item h1 {
+      font-size: 3.5rem;
+    }
+    .carousel-item p {
+      font-size: 30px;
+    }
+    .carousel-control-next {
+      right: 80px;
+    }
+    .carousel-control-prev {
+      left: 80px;
+    }
+  }
+  .tituloSeparador h2{
+    font-size: 3rem;
   }
   .bloqueExcursion {
     .imgExcursion1 {
-      justify-content: center !important;
+      justify-content: center;
       left: 0px;
     }
     .imgExcursion2 {
-      justify-content: center !important;
+      justify-content: center;
       right: 0px;
     }
   }
-  #header {
-    height: auto !important;
+  #videoExcursion{
+    height: 750px;
   }
 }
 
-/*MEDIA QUERIE PANTALLA MD*/
+/*MEDIA QUERIE PANTALLA XXL*/
 
-@media all and (max-width: 768px) {
+@media all and (min-width: 1400px) {
   .mySlide {
-    margin-top: 50px;
-    margin-bottom: 0px;
     .carousel-control-next,
     .carousel-control-prev {
-      height: 30px;
-      width: 30px;
-      border-radius: 30%;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
     }
-    .container h1 {
-      font-size: 30px;
+    .carousel-item h1 {
+      font-size: 4rem;
     }
-    .container p {
-      font-size: 15px !important;
+    .carousel-item p {
+      font-size: 35px;
     }
     .carousel-control-next {
-      right: 5px !important;
+      right: 100px;
     }
     .carousel-control-prev {
-      left: 5px !important;
+      left: 100px;
     }
   }
-  h2 {
-    font-size: 3rem !important;
+  .bloqueExcursion {
+    .imgExcursion1 {
+      justify-content: cen0er;
+      left: 0px;
+    }
+    .imgExcursion2 {
+      justify-content: cen0er;
+      right: 0px;
+    }
   }
-  .wrap-element{
-		flex-wrap: wrap!important;
-		justify-content: center !important;
-	}
+  #videoExcursion{
+    height: 750px;
+  }
 }

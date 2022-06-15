@@ -1,4 +1,4 @@
-@import "home-page";
+@import "index-page";
 @import "excursiones-page";
 @import "contacto-page";
 @import "global";
@@ -6,14 +6,15 @@
 @import "responsive";
 
 .navbar {
-  @include caja-flex(space-between, center, wrap);
+  // @include caja-flex(space-between, center, wrap);
   ul {
     display: flex;
     padding: 0;
     a {
       margin-right: 9px;
       padding: 10px;
-      font-size: 2rem;
+      font-size: 1.5rem;
+      text-align: center;
     }
     a:hover {
       transition: all 0.5s;
@@ -21,9 +22,7 @@
     }
   }
   #navbarSupportedContent {
-    position: absolute;
-    right: 0px;
-    bottom: 5px;
+    position: relative;
   }
 }
 .navbar-dark .navbar-nav .nav-link {
