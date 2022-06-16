@@ -4,7 +4,7 @@
   .mySlide {
     margin-top: 120px;
     margin-bottom: 50px;
-    border-bottom: 2px solid #2800a0;
+    border-bottom: 1px solid #000000;
     .carousel-item {
       background: rgb(0, 0, 0);
       background-position: center;
@@ -85,6 +85,9 @@
       opacity: 1;
       transform: translateX(0px);
     }
+  }
+  .card-body span{
+    color: #cb0d3d;
   }
   .titulosHome {
     background-color: #0e0036d8;
