@@ -13,7 +13,7 @@
     a {
       margin-right: 9px;
       padding: 10px;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       text-align: center;
     }
     a:hover {
@@ -24,6 +24,9 @@
   #navbarSupportedContent {
     position: relative;
   }
+}
+.navbar{
+  height: 70px;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: rgb(255, 255, 255);

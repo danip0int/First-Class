@@ -2,7 +2,8 @@
 /*Comienza pagina CONTACTO*/
 
   #bannerContacto {
-    margin-top: 135px;
+    position: relative;
+    margin-top: 130px;
     width: 100%;
     overflow: hidden;
     .banner-item {
@@ -19,7 +20,7 @@
     .container {
       position: absolute;
       left: 50%;
-      top: 45%;
+      top: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
     }

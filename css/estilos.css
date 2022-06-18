@@ -1,7 +1,7 @@
 /*Contenido HOME*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 .mySlide {
-  margin-top: 120px;
+  margin-top: 100px;
   margin-bottom: 50px;
   border-bottom: 1px solid #000000;
 }
@@ -27,8 +27,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -50,13 +49,11 @@
 }
 
 .mySlide .carousel-item.active h1 {
-  -webkit-animation: fadeInLeft 1s ease forwards;
-          animation: fadeInLeft 1s ease forwards;
+  animation: fadeInLeft 1s ease forwards;
 }
 
 .mySlide .carousel-item.active p {
-  -webkit-animation: fadeInRight 1s ease forwards;
-          animation: fadeInRight 1s ease forwards;
+  animation: fadeInRight 1s ease forwards;
 }
 
 .mySlide .carousel-control-next,
@@ -67,10 +64,8 @@
   opacity: 1;
   z-index: 3;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   border-radius: 50%;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -82,55 +77,25 @@
   left: 20px;
 }
 
-@-webkit-keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-150px);
-            transform: translateX(-150px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-150px);
-            transform: translateX(-150px);
+    transform: translateX(-150px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
-@-webkit-keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(150px);
-            transform: translateX(150px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
 @keyframes fadeInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(150px);
-            transform: translateX(150px);
+    transform: translateX(150px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
@@ -165,15 +130,12 @@
 /*Comienza pagina EXCURSIONES*/
 #videoExcursion {
   position: relative;
-  margin-top: 120px;
+  margin-top: 100px;
+  margin-bottom: 60px;
   width: 100%;
   height: 650px;
   color: white;
   background: black;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 #videoExcursion video {
@@ -184,16 +146,14 @@
   bottom: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #videoExcursion .container {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -214,15 +174,13 @@
 }
 
 .bloqueExcursion .imgExcursion1 {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .bloqueExcursion .imgExcursion2 {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .bloqueExcursion .btn-excursion {
@@ -231,7 +189,8 @@
 
 /*Comienza pagina CONTACTO*/
 #bannerContacto {
-  margin-top: 135px;
+  position: relative;
+  margin-top: 130px;
   width: 100%;
   overflow: hidden;
 }
@@ -251,9 +210,8 @@
 #bannerContacto .container {
   position: absolute;
   left: 50%;
-  top: 45%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -269,36 +227,16 @@
 }
 
 #bannerContacto .kenburns-top {
-  -webkit-animation: kenburns-top 5s cubic-bezier(0.755, 0.05, 0.855, 0.06) reverse both;
   animation: kenburns-top 5s cubic-bezier(0.755, 0.05, 0.855, 0.06) reverse both;
-}
-
-@-webkit-keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-    transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-    transform-origin: 50% 16%;
-  }
-  100% {
-    -webkit-transform: scale(1.25) translateY(-15px);
-    transform: scale(1.25) translateY(-15px);
-    -webkit-transform-origin: top;
-    transform-origin: top;
-  }
 }
 
 @keyframes kenburns-top {
   0% {
-    -webkit-transform: scale(1) translateY(0);
     transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
     transform-origin: 50% 16%;
   }
   100% {
-    -webkit-transform: scale(1.25) translateY(-15px);
     transform: scale(1.25) translateY(-15px);
-    -webkit-transform-origin: top;
     transform-origin: top;
   }
 }
@@ -314,13 +252,8 @@
 
 #bloqueInfo .redesContacto {
   margin-top: 50px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #bloqueInfo .nuestrosDatos {
@@ -334,12 +267,8 @@
 
 #bloqueInfo .nuestrosDatos p {
   margin-top: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 #bloqueInfo .formulario-contacto {
@@ -370,19 +299,13 @@ body {
   height: 100%;
   width: 100%;
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   overflow-x: hidden;
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul {
@@ -397,17 +320,14 @@ a {
 
 /*HEADER*/
 #header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   z-index: 10;
   border-top: 8px solid #cb0d3d;
   width: 100%;
-  height: 120px;
+  height: 100px;
 }
 
 /*FOOTER*/
@@ -419,26 +339,16 @@ a {
 }
 
 .container-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   max-width: 1400px;
   margin: auto;
 }
 
 .box-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 40px;
 }
 
@@ -510,7 +420,6 @@ a {
   border-radius: 15px;
   cursor: pointer;
   margin: auto;
-  margin-bottom: 8px;
   padding-left: 30px;
   padding-right: 30px;
   font-size: 1.1rem;
@@ -545,26 +454,26 @@ a {
 }
 
 .bg-separador {
-  margin-left: 15px;
-  margin-right: 15px;
+  position: relative;
+  margin-left: 70px;
+  margin-right: 70px;
   border-radius: 40px;
   position: relative;
-  color: black;
-  background-color: #00000011;
-  height: 250px;
+  color: white;
+  background: #110042;
+  background: linear-gradient(166deg, #110042 36%, black 92%);
+  height: 350px;
   border-bottom: 2px solid #716f7583;
   border-left: 2px solid #716f7583;
 }
 
 .bg-separador .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   position: absolute;
-  top: 25%;
-  left: 5%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -581,12 +490,9 @@ a {
 }
 
 .animacion-hover:hover {
-  -webkit-transition: all 0.6s;
   transition: all 0.6s;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-  -webkit-box-shadow: 0px 0px 25px #666;
-          box-shadow: 0px 0px 25px #666;
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 25px #666;
   cursor: pointer;
 }
 
@@ -615,27 +521,31 @@ a {
 }
 
 .font-h1 {
-  font-size: 3rem;
-}
-
-.font-h2 {
   font-size: 2.5rem;
 }
 
+.font-h2 {
+  font-size: 2rem;
+}
+
 .font-h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .font-h4 {
-  font-size: 1rem;
+  font-size: 0.5rem;
 }
 
 .font-p {
   font-size: 14px;
 }
 
-.font-pPlus {
+.font-pM {
   font-size: 18px;
+}
+
+.font-pXL {
+  font-size: 25px;
 }
 
 @media all and (min-width: 992px) {
@@ -655,6 +565,21 @@ a {
   }
   .mySlide .carousel-control-prev {
     left: 50px;
+  }
+  .navbar-nav {
+    position: absolute;
+    right: 0px;
+  }
+  .navbar-nav ul {
+    display: flex;
+    right: 0px;
+  }
+  .navbar-nav ul a {
+    padding: 10px;
+    font-size: 5rem;
+  }
+  .navbar-nav #navbarSupportedContent {
+    position: relative;
   }
   .btn-1, .bloqueExcursion .btn-excursion, .btn-contacto, .btn {
     font-size: 1.2rem;
@@ -691,16 +616,16 @@ a {
     font-size: 2.5rem;
   }
   .bloqueExcursion .imgExcursion1 {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    left: 0px;
+    justify-content: start;
   }
   .bloqueExcursion .imgExcursion2 {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    right: 0px;
+    justify-content: end;
+  }
+  .card-title {
+    font-size: 1.5rem;
+  }
+  .precioDestino {
+    font-size: 25px;
   }
 }
 
@@ -725,25 +650,35 @@ a {
     left: 100px;
   }
   .bloqueExcursion .imgExcursion1 {
-    -webkit-box-pack: cen0er;
-        -ms-flex-pack: cen0er;
-            justify-content: cen0er;
+    justify-content: cen0er;
     left: 0px;
   }
   .bloqueExcursion .imgExcursion2 {
-    -webkit-box-pack: cen0er;
-        -ms-flex-pack: cen0er;
-            justify-content: cen0er;
+    justify-content: cen0er;
     right: 0px;
   }
   #videoExcursion {
     height: 750px;
   }
+  #videoExcursion .container h1 {
+    font-size: 4rem;
+  }
+  #bannerContacto .container h1 {
+    font-size: 4rem;
+  }
+  .bg-separador {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  .bg-separador .container h2 {
+    font-size: 2.7rem;
+  }
+  .bg-separador .container p {
+    font-size: 27px;
+  }
 }
 
 .navbar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0;
 }
@@ -751,19 +686,21 @@ a {
 .navbar ul a {
   margin-right: 9px;
   padding: 10px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
 .navbar ul a:hover {
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .navbar #navbarSupportedContent {
   position: relative;
+}
+
+.navbar {
+  height: 70px;
 }
 
 .navbar-dark .navbar-nav .nav-link {

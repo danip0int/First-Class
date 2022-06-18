@@ -14,12 +14,13 @@ $fonts: (
 }
 
 $headings:(
-  h1: 3rem,
-  h2: 2.5rem,
-  h3: 1.5rem,
-  h4: 1rem,
+  h1: 2.5rem,
+  h2: 2rem,
+  h3: 1.3rem,
+  h4: 0.5rem,
   p: 14px,
-  pPlus: 18px
+  pM: 18px,
+  pXL: 25px
 );
 
 @each $heading, $size in $headings{
