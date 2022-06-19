@@ -107,6 +107,8 @@
   background-color: #0e0036d8;
   padding-left: 30px;
   padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   color: white;
   border-radius: 20px;
 }
@@ -446,11 +448,7 @@ a {
 }
 
 .bg-color5 {
-  background-color: rgba(192, 189, 189, 0.055);
-}
-
-.bg-cards {
-  background-color: #ffffff;
+  background-color: #cb0d3d;
 }
 
 .bg-separador {
@@ -613,7 +611,10 @@ a {
     left: 80px;
   }
   .tituloSeparador h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+  }
+  .titulosHome {
+    font-size: 2rem;
   }
   .bloqueExcursion .imgExcursion1 {
     justify-content: start;
