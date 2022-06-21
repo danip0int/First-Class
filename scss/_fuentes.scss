@@ -1,4 +1,3 @@
-
 $fonts: (
   light: 300,
   regular: 400,
@@ -13,17 +12,17 @@ $fonts: (
   }
 }
 
-$headings:(
-  h1: 2.5rem,
-  h2: 2rem,
+$headings: (
+  h1: 1.9rem,
+  h2: 1.8rem,
   h3: 1.3rem,
-  h4: 0.5rem,
-  p: 14px,
-  pM: 18px,
-  pXL: 25px
+  h4: 0.8rem,
+  p: 12px,
+  pM: 20px,
+  pXL: 25px,
 );
 
-@each $heading, $size in $headings{
+@each $heading, $size in $headings {
   .font-#{$heading} {
     font-size: $size;
   }

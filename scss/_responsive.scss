@@ -1,4 +1,26 @@
-
+@media all and (min-width: 768px) {
+  .mySlide {
+    .carousel-control-next,
+    .carousel-control-prev {
+      display: flex;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 1;
+      z-index: 3;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+    .carousel-control-next {
+      right: 30px;
+    }
+    .carousel-control-prev {
+      left: 30px;
+    }
+  }
+}
 // /*MEDIA QUERIE PANTALLA LG*/
 
 @media all and (min-width: 992px) {
@@ -36,15 +58,28 @@
       position: relative;
     }
   }
-  .btn-1{
+  .btn-1 {
     font-size: 1.2rem;
   }
-  .redesContacto{
-    h3{
+  .redesContacto {
+    h3 {
       font-size: 1.8rem;
     }
-    a{
+    a {
       font-size: 1.5rem;
+    }
+  }
+  .footer {
+    .container-footer {
+      justify-content: none;
+    }
+
+    .box-footer {
+      align-items: none;
+    }
+
+    .box-footer .terms {
+      text-align: none;
     }
   }
 }
@@ -71,11 +106,11 @@
       left: 80px;
     }
   }
-  .tituloSeparador h2{
+  .tituloSeparador h2 {
     font-size: 3rem;
   }
-  .titulosHome{
-    font-size:2rem;
+  .titulosHome {
+    font-size: 2rem;
   }
   .bloqueExcursion {
     .imgExcursion1 {
@@ -85,10 +120,10 @@
       justify-content: end;
     }
   }
-  .card-title{
+  .card-title {
     font-size: 1.5rem;
   }
-  .precioDestino{
+  .precioDestino {
     font-size: 25px;
   }
 }
@@ -126,29 +161,29 @@
       right: 0px;
     }
   }
-  #videoExcursion{
+  #videoExcursion {
     height: 750px;
-    .container{
-      h1{
+    .container {
+      h1 {
         font-size: 4rem;
       }
     }
   }
-  #bannerContacto{
-    .container{
-      h1{
+  #bannerContacto {
+    .container {
+      h1 {
         font-size: 4rem;
       }
     }
   }
-  .bg-separador{
+  .bg-separador {
     margin-left: 70px;
     margin-right: 70px;
-    .container{
-      h2{
+    .container {
+      h2 {
         font-size: 2.7rem;
       }
-      p{
+      p {
         font-size: 27px;
       }
     }

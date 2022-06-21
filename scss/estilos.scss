@@ -1,33 +1,6 @@
 @import "index-page";
+@import "global";
 @import "excursiones-page";
 @import "contacto-page";
-@import "global";
 @import "fuentes";
 @import "responsive";
-
-.navbar {
-  // @include caja-flex(space-between, center, wrap);
-  ul {
-    display: flex;
-    padding: 0;
-    a {
-      margin-right: 9px;
-      padding: 10px;
-      font-size: 1.4rem;
-      text-align: center;
-    }
-    a:hover {
-      transition: all 0.5s;
-      transform: scale(1.2);
-    }
-  }
-  #navbarSupportedContent {
-    position: relative;
-  }
-}
-.navbar{
-  height: 70px;
-}
-.navbar-dark .navbar-nav .nav-link {
-  color: rgb(255, 255, 255);
-}

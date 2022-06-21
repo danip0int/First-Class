@@ -1,110 +1,124 @@
 
 /*Comienza pagina CONTACTO*/
 
-  #bannerContacto {
+#bannerContacto {
+  position: relative;
+  margin-top: 110px;
+  width: 100%;
+  overflow: hidden;
+  .banner-item {
+    background: rgb(0, 0, 0);
+    background-image: url("../assets/destino.jpg");
+    background-position-y: 50%;
+    background-size: cover;
     position: relative;
-    margin-top: 130px;
-    width: 100%;
-    overflow: hidden;
-    .banner-item {
-      background: rgb(0, 0, 0);
-      background-image: url("/assets/destino.jpg");
-      background-position-y: 50%;
-      background-size: cover;
-      position: relative;
-      height: 400px;
-      border-radius: 40px;
-      margin-left: 20px;
-      margin-right: 20px;
+    height: 400px;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .container h1 {
+    text-shadow: 0px 0px 15px rgb(0, 0, 0);
+  }
+  .overlay-banner {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+  }
+  .kenburns-top {
+    -webkit-animation: kenburns-top 5s cubic-bezier(0.755, 0.05, 0.855, 0.06)
+      reverse both;
+    animation: kenburns-top 5s cubic-bezier(0.755, 0.05, 0.855, 0.06) reverse
+      both;
+  }
+  @-webkit-keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+      transform-origin: 50% 16%;
     }
-    .container {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-    .container h1{
-      text-shadow: 0px 0px 15px rgb(0, 0, 0);
-    }
-    .overlay-banner{
-      position: relative;
-      background-position: center;
-      background-size: cover;
-      opacity: 0.5;
-    }
-    .kenburns-top {
-      -webkit-animation: kenburns-top 5s cubic-bezier(0.755, 0.050, 0.855, 0.060) reverse both;
-              animation: kenburns-top 5s cubic-bezier(0.755, 0.050, 0.855, 0.060) reverse both;
-    }
-    @-webkit-keyframes kenburns-top {
-      0% {
-        -webkit-transform: scale(1) translateY(0);
-                transform: scale(1) translateY(0);
-        -webkit-transform-origin: 50% 16%;
-                transform-origin: 50% 16%;
-      }
-      100% {
-        -webkit-transform: scale(1.25) translateY(-15px);
-                transform: scale(1.25) translateY(-15px);
-        -webkit-transform-origin: top;
-                transform-origin: top;
-      }
-    }
-    @keyframes kenburns-top {
-      0% {
-        -webkit-transform: scale(1) translateY(0);
-                transform: scale(1) translateY(0);
-        -webkit-transform-origin: 50% 16%;
-                transform-origin: 50% 16%;
-      }
-      100% {
-        -webkit-transform: scale(1.25) translateY(-15px);
-                transform: scale(1.25) translateY(-15px);
-        -webkit-transform-origin: top;
-                transform-origin: top;
-      }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+      transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+      transform-origin: top;
     }
   }
-  #bloqueInfo {
-    margin-top: 80px;
-    margin-bottom: 100px;
-    hr{
-      margin-top: 40px;
+  @keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+      transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+      transform-origin: 50% 16%;
     }
-    .redesContacto{
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+      transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+      transform-origin: top;
+    }
+  }
+}
+.bloqueInfo {
+  margin-top: 80px;
+  .nuestrosDatos {
+    margin-bottom: 5px;
+    color: white;
+    border-radius: 10px;
+    h2 {
+      padding-top: 8px;
+    }
+    p {
       margin-top: 50px;
-      flex-direction: column;
-      align-items: center;
-    }
-    .nuestrosDatos{
-      color: white;
-      border-radius: 30px;
-    }
-    .nuestrosDatos hr{
-      color: white;
-    }
-    .nuestrosDatos p{
-      margin-top: 30px;
       align-items: center;
       justify-content: center;
     }
-    .formulario-contacto{
-      border-radius: 30px;
+    hr {
+      height: 3px;
     }
-    .formulario-contacto label{
+  }
+  .formulario-contacto {
+    border-radius: 10px;
+    label {
       padding-top: 5px;
     }
+    hr {
+      height: 3px;
+    }
+    .btn-contacto {
+      margin-top: 50px;
+    }
   }
-  .btn-contacto {
-    @extend .btn-1;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 0px;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 8px;
-    font-size: 2rem;
-    font-weight: 500;
-    background-color: rgb(0, 0, 0);
+  hr {
+    margin-top: 40px;
   }
+  .redesContacto {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.btn-contacto {
+  @extend .btn-1;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  background-color: rgb(0, 0, 0);
+}
+
+#bloqueContacto{
+  background-size: contain;
+  background-position-y: 79%;
+  background-repeat: no-repeat;
+  background-image: url(../assets/bg-montañas.png);
+}
