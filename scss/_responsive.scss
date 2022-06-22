@@ -54,12 +54,9 @@
         font-size: 5rem;
       }
     }
-    #navbarSupportedContent {
-      position: relative;
-    }
   }
   .btn-1 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .redesContacto {
     h3 {
@@ -112,19 +109,32 @@
   .titulosHome {
     font-size: 2rem;
   }
-  .bloqueExcursion {
-    .imgExcursion1 {
-      justify-content: start;
-    }
-    .imgExcursion2 {
-      justify-content: end;
-    }
-  }
   .card-title {
     font-size: 1.5rem;
   }
   .precioDestino {
     font-size: 25px;
+  }
+  .bg-separador {
+    height: 350px;
+    margin-left: 150px;
+    margin-right: 150px;
+    .container {
+      h2 {
+        font-size: 2.7rem;
+      }
+      p {
+        font-size: 27px;
+      }
+    }
+  }
+  #videoExcursion {
+    height: 910px;
+    .container {
+      h1 {
+        font-size: 4rem;
+      }
+    }
   }
 }
 
@@ -151,40 +161,10 @@
       left: 100px;
     }
   }
-  .bloqueExcursion {
-    .imgExcursion1 {
-      justify-content: cen0er;
-      left: 0px;
-    }
-    .imgExcursion2 {
-      justify-content: cen0er;
-      right: 0px;
-    }
-  }
-  #videoExcursion {
-    height: 750px;
-    .container {
-      h1 {
-        font-size: 4rem;
-      }
-    }
-  }
   #bannerContacto {
     .container {
       h1 {
         font-size: 4rem;
-      }
-    }
-  }
-  .bg-separador {
-    margin-left: 70px;
-    margin-right: 70px;
-    .container {
-      h2 {
-        font-size: 2.7rem;
-      }
-      p {
-        font-size: 27px;
       }
     }
   }

@@ -1,138 +1,5 @@
 @charset "UTF-8";
-/*Contenido HOME*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
-.mySlide {
-  overflow: hidden;
-  margin-top: 94px;
-  margin-bottom: 50px;
-  border-bottom: 1px solid #000000;
-}
-
-.mySlide .carousel-item {
-  background: black;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-.mySlide .carousel-item:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
-
-.mySlide .carousel-item .container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.mySlide .carousel-item .overlay-image {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.7;
-}
-
-.mySlide .carousel-item h1 {
-  color: #ffffff;
-}
-
-.mySlide .carousel-item p {
-  font-size: 25px;
-  margin: 0;
-  color: #ffffff;
-}
-
-.mySlide .carousel-item.active h1 {
-  animation: fadeInLeft 1s ease forwards;
-}
-
-.mySlide .carousel-item.active p {
-  animation: fadeInRight 1s ease forwards;
-}
-
-.mySlide .carousel-control-next,
-.mySlide .carousel-control-prev {
-  display: none;
-  height: none;
-  width: none;
-  background-color: none;
-  opacity: none;
-  z-index: none;
-  top: none;
-  transform: none;
-  border-radius: none;
-  transition: none;
-}
-
-.mySlide .carousel-control-next {
-  right: 0px;
-}
-
-.mySlide .carousel-control-prev {
-  left: 0px;
-}
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-150px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(150px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-.card-body span {
-  color: #cb0d3d;
-}
-
-.titulosHome {
-  overflow: hidden;
-  background-color: #0e0036d8;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: white;
-  border-radius: 20px;
-}
-
-.tituloSeparador {
-  width: 100%;
-  color: black;
-}
-
-.container-titulo {
-  padding-left: 10px;
-  margin-top: 50px;
-}
-
-.tituloSeparador hr {
-  border: none;
-  height: 2px;
-  background-color: black;
-}
-
 /*BODY*/
 body {
   margin: 0;
@@ -287,6 +154,7 @@ a {
   margin: auto;
   padding-left: 30px;
   padding-right: 30px;
+  font-size: 1rem;
   color: white;
   background-color: #cb0d3d;
 }
@@ -314,15 +182,15 @@ a {
 
 .bg-separador {
   overflow: hidden;
+  height: 250px;
   position: relative;
   margin-left: 20px;
   margin-right: 20px;
-  border-radius: 40px;
+  border-radius: 20px;
   position: relative;
   color: white;
   background: #110042;
   background: linear-gradient(166deg, #110042 36%, black 92%);
-  height: 350px;
 }
 
 .bg-separador .container {
@@ -352,6 +220,339 @@ a {
   transform: translateY(-10px);
   box-shadow: 0px 0px 25px #666;
   cursor: pointer;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semi-bold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extra-bold {
+  font-weight: 800;
+}
+
+.font-h1 {
+  font-size: 1.9rem;
+}
+
+.font-h2 {
+  font-size: 1.8rem;
+}
+
+.font-h3 {
+  font-size: 1.3rem;
+}
+
+.font-h4 {
+  font-size: 0.8rem;
+}
+
+.font-p {
+  font-size: 12px;
+}
+
+.font-pM {
+  font-size: 20px;
+}
+
+.font-pXL {
+  font-size: 25px;
+}
+
+/*Contenido HOME*/
+.mySlide {
+  overflow: hidden;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #000000;
+}
+
+.mySlide .carousel-item {
+  background: black;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.mySlide .carousel-item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.mySlide .carousel-item .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.mySlide .carousel-item .overlay-image {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.mySlide .carousel-item h1 {
+  color: #ffffff;
+}
+
+.mySlide .carousel-item p {
+  font-size: 25px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.mySlide .carousel-item.active h1 {
+  animation: fadeInLeft 1s ease forwards;
+}
+
+.mySlide .carousel-item.active p {
+  animation: fadeInRight 1s ease forwards;
+}
+
+.mySlide .carousel-control-next,
+.mySlide .carousel-control-prev {
+  display: none;
+  height: none;
+  width: none;
+  background-color: none;
+  opacity: none;
+  z-index: none;
+  top: none;
+  transform: none;
+  border-radius: none;
+  transition: none;
+}
+
+.mySlide .carousel-control-next {
+  right: 0px;
+}
+
+.mySlide .carousel-control-prev {
+  left: 0px;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.card-body span {
+  color: #cb0d3d;
+}
+
+.titulosHome {
+  overflow: hidden;
+  background-color: #0e0036d8;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  border-radius: 20px;
+}
+
+.tituloSeparador {
+  width: 100%;
+  color: black;
+}
+
+.container-titulo {
+  padding-left: 10px;
+  margin-top: 50px;
+}
+
+.tituloSeparador hr {
+  border: none;
+  height: 2px;
+  background-color: black;
+}
+
+@media all and (min-width: 768px) {
+  .mySlide .carousel-control-next,
+  .mySlide .carousel-control-prev {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    z-index: 3;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  .mySlide .carousel-control-next {
+    right: 30px;
+  }
+  .mySlide .carousel-control-prev {
+    left: 30px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .mySlide .carousel-control-next,
+  .mySlide .carousel-control-prev {
+    height: 50px;
+    width: 50px;
+  }
+  .mySlide .carousel-item h1 {
+    font-size: 3rem;
+  }
+  .mySlide .carousel-item p {
+    font-size: 25px;
+  }
+  .mySlide .carousel-control-next {
+    right: 50px;
+  }
+  .mySlide .carousel-control-prev {
+    left: 50px;
+  }
+  .navbar-nav {
+    position: absolute;
+    right: 0px;
+  }
+  .navbar-nav ul {
+    display: flex;
+    right: 0px;
+  }
+  .navbar-nav ul a {
+    padding: 10px;
+    font-size: 5rem;
+  }
+  .btn-1, .btn, .btn-excursion, .btn-contacto {
+    font-size: 1.3rem;
+  }
+  .redesContacto h3 {
+    font-size: 1.8rem;
+  }
+  .redesContacto a {
+    font-size: 1.5rem;
+  }
+  .footer .container-footer {
+    justify-content: none;
+  }
+  .footer .box-footer {
+    align-items: none;
+  }
+  .footer .box-footer .terms {
+    text-align: none;
+  }
+}
+
+/*MEDIA QUERIE PANTALLA XL*/
+@media all and (min-width: 1200px) {
+  .mySlide .carousel-control-next,
+  .mySlide .carousel-control-prev {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  .mySlide .carousel-item h1 {
+    font-size: 3.5rem;
+  }
+  .mySlide .carousel-item p {
+    font-size: 30px;
+  }
+  .mySlide .carousel-control-next {
+    right: 80px;
+  }
+  .mySlide .carousel-control-prev {
+    left: 80px;
+  }
+  .tituloSeparador h2 {
+    font-size: 3rem;
+  }
+  .titulosHome {
+    font-size: 2rem;
+  }
+  .card-title {
+    font-size: 1.5rem;
+  }
+  .precioDestino {
+    font-size: 25px;
+  }
+  .bg-separador {
+    height: 350px;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .bg-separador .container h2 {
+    font-size: 2.7rem;
+  }
+  .bg-separador .container p {
+    font-size: 27px;
+  }
+  #videoExcursion {
+    height: 910px;
+  }
+  #videoExcursion .container h1 {
+    font-size: 4rem;
+  }
+}
+
+/*MEDIA QUERIE PANTALLA XXL*/
+@media all and (min-width: 1400px) {
+  .mySlide .carousel-control-next,
+  .mySlide .carousel-control-prev {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+  .mySlide .carousel-item h1 {
+    font-size: 4rem;
+  }
+  .mySlide .carousel-item p {
+    font-size: 35px;
+  }
+  .mySlide .carousel-control-next {
+    right: 100px;
+  }
+  .mySlide .carousel-control-prev {
+    left: 100px;
+  }
+  #bannerContacto .container h1 {
+    font-size: 4rem;
+  }
 }
 
 /*Comienza pagina EXCURSIONES*/
@@ -500,6 +701,7 @@ a {
 }
 
 .btn-contacto {
+  font-size: 1.3rem;
   border-radius: 5px;
   cursor: pointer;
   margin: auto;
@@ -513,221 +715,5 @@ a {
   background-position-y: 79%;
   background-repeat: no-repeat;
   background-image: url(../assets/bg-montañas.png);
-}
-
-.font-light {
-  font-weight: 300;
-}
-
-.font-regular {
-  font-weight: 400;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
-.font-semi-bold {
-  font-weight: 600;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.font-extra-bold {
-  font-weight: 800;
-}
-
-.font-h1 {
-  font-size: 1.9rem;
-}
-
-.font-h2 {
-  font-size: 1.8rem;
-}
-
-.font-h3 {
-  font-size: 1.3rem;
-}
-
-.font-h4 {
-  font-size: 0.8rem;
-}
-
-.font-p {
-  font-size: 12px;
-}
-
-.font-pM {
-  font-size: 20px;
-}
-
-.font-pXL {
-  font-size: 25px;
-}
-
-@media all and (min-width: 768px) {
-  .mySlide .carousel-control-next,
-  .mySlide .carousel-control-prev {
-    display: flex;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 1;
-    z-index: 3;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    transition: all 0.3s ease;
-  }
-  .mySlide .carousel-control-next {
-    right: 30px;
-  }
-  .mySlide .carousel-control-prev {
-    left: 30px;
-  }
-}
-
-@media all and (min-width: 992px) {
-  .mySlide .carousel-control-next,
-  .mySlide .carousel-control-prev {
-    height: 50px;
-    width: 50px;
-  }
-  .mySlide .carousel-item h1 {
-    font-size: 3rem;
-  }
-  .mySlide .carousel-item p {
-    font-size: 25px;
-  }
-  .mySlide .carousel-control-next {
-    right: 50px;
-  }
-  .mySlide .carousel-control-prev {
-    left: 50px;
-  }
-  .navbar-nav {
-    position: absolute;
-    right: 0px;
-  }
-  .navbar-nav ul {
-    display: flex;
-    right: 0px;
-  }
-  .navbar-nav ul a {
-    padding: 10px;
-    font-size: 5rem;
-  }
-  .navbar-nav #navbarSupportedContent {
-    position: relative;
-  }
-  .btn-1, .btn, .btn-excursion, .btn-contacto {
-    font-size: 1.2rem;
-  }
-  .redesContacto h3 {
-    font-size: 1.8rem;
-  }
-  .redesContacto a {
-    font-size: 1.5rem;
-  }
-  .footer .container-footer {
-    justify-content: none;
-  }
-  .footer .box-footer {
-    align-items: none;
-  }
-  .footer .box-footer .terms {
-    text-align: none;
-  }
-}
-
-/*MEDIA QUERIE PANTALLA XL*/
-@media all and (min-width: 1200px) {
-  .mySlide .carousel-control-next,
-  .mySlide .carousel-control-prev {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-  }
-  .mySlide .carousel-item h1 {
-    font-size: 3.5rem;
-  }
-  .mySlide .carousel-item p {
-    font-size: 30px;
-  }
-  .mySlide .carousel-control-next {
-    right: 80px;
-  }
-  .mySlide .carousel-control-prev {
-    left: 80px;
-  }
-  .tituloSeparador h2 {
-    font-size: 3rem;
-  }
-  .titulosHome {
-    font-size: 2rem;
-  }
-  .bloqueExcursion .imgExcursion1 {
-    justify-content: start;
-  }
-  .bloqueExcursion .imgExcursion2 {
-    justify-content: end;
-  }
-  .card-title {
-    font-size: 1.5rem;
-  }
-  .precioDestino {
-    font-size: 25px;
-  }
-}
-
-/*MEDIA QUERIE PANTALLA XXL*/
-@media all and (min-width: 1400px) {
-  .mySlide .carousel-control-next,
-  .mySlide .carousel-control-prev {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-  }
-  .mySlide .carousel-item h1 {
-    font-size: 4rem;
-  }
-  .mySlide .carousel-item p {
-    font-size: 35px;
-  }
-  .mySlide .carousel-control-next {
-    right: 100px;
-  }
-  .mySlide .carousel-control-prev {
-    left: 100px;
-  }
-  .bloqueExcursion .imgExcursion1 {
-    justify-content: cen0er;
-    left: 0px;
-  }
-  .bloqueExcursion .imgExcursion2 {
-    justify-content: cen0er;
-    right: 0px;
-  }
-  #videoExcursion {
-    height: 750px;
-  }
-  #videoExcursion .container h1 {
-    font-size: 4rem;
-  }
-  #bannerContacto .container h1 {
-    font-size: 4rem;
-  }
-  .bg-separador {
-    margin-left: 70px;
-    margin-right: 70px;
-  }
-  .bg-separador .container h2 {
-    font-size: 2.7rem;
-  }
-  .bg-separador .container p {
-    font-size: 27px;
-  }
 }
 /*# sourceMappingURL=estilos.css.map */

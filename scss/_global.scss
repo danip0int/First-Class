@@ -145,6 +145,7 @@ a {
   margin: auto;
   padding-left: 30px;
   padding-right: 30px;
+  font-size: 1rem;
   color: rgb(255, 255, 255);
   background-color: #cb0d3d;
 }
@@ -170,10 +171,11 @@ a {
 }
 .bg-separador {
   overflow: hidden;
+  height: 250px;
   position: relative;
   margin-left: 20px;
   margin-right: 20px;
-  border-radius: 40px;
+  border-radius: 20px;
   position: relative;
   color: rgb(255, 255, 255);
   background: rgb(17, 0, 66);
@@ -182,7 +184,6 @@ a {
     rgba(17, 0, 66, 1) 36%,
     rgba(0, 0, 0, 1) 92%
   );
-  height: 350px;
 
   .container {
     display: flex;
