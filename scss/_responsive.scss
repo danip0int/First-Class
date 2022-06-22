@@ -56,7 +56,7 @@
     }
   }
   .btn-1 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   .redesContacto {
     h3 {
@@ -77,6 +77,26 @@
 
     .box-footer .terms {
       text-align: none;
+    }
+  }
+  .bg-separador {
+    height: 350px;
+    margin-left: 100px;
+    margin-right: 100px;
+    .container {
+      h2 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 23px;
+      }
+    }
+  }
+  #bannerContacto {
+    .container {
+      h1 {
+        font-size: 2.5rem;
+      }
     }
   }
 }
@@ -104,7 +124,7 @@
     }
   }
   .tituloSeparador h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .titulosHome {
     font-size: 2rem;
@@ -113,20 +133,7 @@
     font-size: 1.5rem;
   }
   .precioDestino {
-    font-size: 25px;
-  }
-  .bg-separador {
-    height: 350px;
-    margin-left: 150px;
-    margin-right: 150px;
-    .container {
-      h2 {
-        font-size: 2.7rem;
-      }
-      p {
-        font-size: 27px;
-      }
-    }
+    font-size: 20px;
   }
   #videoExcursion {
     height: 910px;
@@ -165,6 +172,19 @@
     .container {
       h1 {
         font-size: 4rem;
+      }
+    }
+  }
+  .bg-separador {
+    height: 350px;
+    margin-left: 150px;
+    margin-right: 150px;
+    .container {
+      h2 {
+        font-size: 2.7rem;
+      }
+      p {
+        font-size: 27px;
       }
     }
   }

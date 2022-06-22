@@ -2,6 +2,7 @@
 /*Comienza pagina EXCURSIONES*/
 
 #videoExcursion {
+  overflow: hidden ;
   position: relative;
   margin-top: 94px;
   margin-bottom: 60px;
@@ -31,11 +32,13 @@
 }
 
 .tituloExcursion {
+  overflow: hidden;
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
 .btn-excursion {
   @extend .btn-1;
+  font-size: 1.3rem;
   background-color: rgb(85, 28, 101);
 }
