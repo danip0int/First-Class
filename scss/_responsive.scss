@@ -68,15 +68,9 @@
   }
   .footer {
     .container-footer {
-      justify-content: none;
-    }
-
-    .box-footer {
-      align-items: none;
-    }
-
-    .box-footer .terms {
-      text-align: none;
+      .box-footer {
+        text-align:start;
+      }
     }
   }
   .bg-separador {
@@ -98,6 +92,9 @@
         font-size: 2.5rem;
       }
     }
+  }
+  #bloqueContacto{
+    background-position-y: 92%!important;
   }
 }
 /*MEDIA QUERIE PANTALLA XL*/
@@ -143,6 +140,9 @@
       }
     }
   }
+  #bloqueContacto{
+    background-position-y: 88%!important;
+  }
 }
 
 /*MEDIA QUERIE PANTALLA XXL*/
@@ -187,5 +187,8 @@
         font-size: 27px;
       }
     }
+  }
+  .tituloSeparador h2{
+    font-size: 2.5rem ;
   }
 }
