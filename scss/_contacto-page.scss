@@ -1,9 +1,8 @@
-
 /*Comienza pagina CONTACTO*/
 
 #bannerContacto {
   position: relative;
-  margin-top: 110px;
+  margin-top: 20px;
   width: 100%;
   overflow: hidden;
   .banner-item {
@@ -14,8 +13,8 @@
     position: relative;
     height: 400px;
     border-radius: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 9px;
+    margin-right: 9px;
   }
   .container {
     position: absolute;
@@ -115,9 +114,9 @@
   margin-top: 5px;
   margin-bottom: 8px;
   background-color: rgb(0, 0, 0);
+  color: white;
 }
-
-#bloqueContacto{
+#bloqueContacto {
   background-size: contain;
   background-position-y: 98%;
   background-repeat: no-repeat;

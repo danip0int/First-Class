@@ -19,12 +19,19 @@
     .carousel-control-prev {
       left: 30px;
     }
+    .carousel-item h1 {
+      font-size: 2.3rem;
+    }
+    .carousel-item p {
+      font-size: 23px;
+    }
   }
 }
 // /*MEDIA QUERIE PANTALLA LG*/
 
 @media all and (min-width: 992px) {
   .mySlide {
+    margin-top: 90px;
     .carousel-control-next,
     .carousel-control-prev {
       height: 50px;
@@ -34,7 +41,7 @@
       font-size: 3rem;
     }
     .carousel-item p {
-      font-size: 25px;
+      font-size: 27px;
     }
     .carousel-control-next {
       right: 50px;
@@ -43,17 +50,25 @@
       left: 50px;
     }
   }
-  .navbar-nav {
-    position: absolute;
-    right: 0px;
-    ul {
-      display: flex;
+  #header {
+    height: 90px;
+    position: fixed;
+    .navbar-nav {
+      position: absolute;
       right: 0px;
-      a {
-        padding: 10px;
-        font-size: 5rem;
+      padding-top: 0px !important;
+      padding-bottom: 0px;
+      ul {
+        display: flex;
+        right: 0px;
+        font-size: 40px a {
+          padding: 10px;
+        }
       }
     }
+  }
+  .logo img {
+    max-width: 100% !important;
   }
   .btn-1 {
     font-size: 1.1rem;
@@ -69,7 +84,7 @@
   .footer {
     .container-footer {
       .box-footer {
-        text-align:start;
+        text-align: start !important;
       }
     }
   }
@@ -87,14 +102,18 @@
     }
   }
   #bannerContacto {
+    margin-top: 100px !important;
     .container {
       h1 {
         font-size: 2.5rem;
       }
     }
   }
-  #bloqueContacto{
-    background-position-y: 92%!important;
+  #bloqueContacto {
+    background-position-y: 92% !important;
+  }
+  #videoExcursion {
+    margin-top: 90px;
   }
 }
 /*MEDIA QUERIE PANTALLA XL*/
@@ -108,10 +127,10 @@
       border-radius: 50%;
     }
     .carousel-item h1 {
-      font-size: 3.5rem;
+      font-size: 3.2rem;
     }
     .carousel-item p {
-      font-size: 30px;
+      font-size: 28px;
     }
     .carousel-control-next {
       right: 80px;
@@ -130,9 +149,10 @@
     font-size: 1.5rem;
   }
   .precioDestino {
-    font-size: 20px;
+    font-size: 22px;
   }
   #videoExcursion {
+    margin-top: 90px;
     height: 910px;
     .container {
       h1 {
@@ -140,8 +160,11 @@
       }
     }
   }
-  #bloqueContacto{
-    background-position-y: 88%!important;
+  #bloqueContacto {
+    background-position-y: 88% !important;
+  }
+  .btn-1 {
+    font-size: 1.3rem;
   }
 }
 
@@ -162,13 +185,14 @@
       font-size: 35px;
     }
     .carousel-control-next {
-      right: 100px;
+      right: 170px;
     }
     .carousel-control-prev {
-      left: 100px;
+      left: 170px;
     }
   }
   #bannerContacto {
+    margin-top: 100px;
     .container {
       h1 {
         font-size: 4rem;
@@ -188,7 +212,18 @@
       }
     }
   }
-  .tituloSeparador h2{
-    font-size: 2.5rem ;
+  .tituloSeparador h2 {
+    font-size: 2.5rem;
+  }
+  #videoExcursion {
+    height: 900px !important;
+    .container {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+  .precioDestino {
+    font-size: 25px;
   }
 }

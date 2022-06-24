@@ -13,13 +13,13 @@ $fonts: (
 }
 
 $headings: (
-  h1: 1.9rem,
-  h2: 1.8rem,
-  h3: 1.3rem,
+  h1: 1.8rem,
+  h2: 1.75rem,
+  h3: 1.5rem,
   h4: 0.8rem,
   p: 12px,
   pM: 20px,
-  pXL: 25px,
+  pXL: 22px,
 );
 
 @each $heading, $size in $headings {

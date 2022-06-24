@@ -25,15 +25,15 @@
 }
 
 .font-h1 {
-  font-size: 1.9rem;
-}
-
-.font-h2 {
   font-size: 1.8rem;
 }
 
+.font-h2 {
+  font-size: 1.75rem;
+}
+
 .font-h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .font-h4 {
@@ -49,13 +49,12 @@
 }
 
 .font-pXL {
-  font-size: 25px;
+  font-size: 22px;
 }
 
 /*Contenido HOME*/
 .mySlide {
   overflow: hidden;
-  margin-top: 83px;
   margin-bottom: 50px;
   border-bottom: 1px solid #000000;
 }
@@ -97,7 +96,7 @@
 }
 
 .mySlide .carousel-item p {
-  font-size: 25px;
+  font-size: 19px;
   margin: 0;
   color: #ffffff;
 }
@@ -212,133 +211,6 @@ a {
   color: #2900a0b5;
 }
 
-.navbar ul {
-  display: flex;
-}
-
-.navbar ul a {
-  padding: 10px;
-  text-align: center;
-  margin-right: 10px;
-}
-
-.navbar ul a:hover {
-  transition: all 0.5s;
-  transform: scale(1.2);
-}
-
-.navbar-toggler {
-  background-color: #fd3737;
-  border: 2px solid;
-}
-
-.navbar-dark .navbar-toggler {
-  color: white;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: white;
-}
-
-/*HEADER*/
-#header {
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  z-index: 10;
-  border-top: 8px solid #cb0d3d;
-  width: 100%;
-}
-
-/*FOOTER*/
-.footer {
-  overflow: hidden;
-  width: 100%;
-  height: auto;
-  padding: 50px 0px;
-  background-color: #0e0036;
-}
-
-.footer .container-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1400px;
-  margin: auto;
-}
-
-.footer .container-footer .box-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding: 40px;
-}
-
-.footer .container-footer .box-footer .terms {
-  max-width: 350px;
-  margin-top: 5px;
-  color: white;
-  justify-content: center;
-}
-
-.footer .container-footer .box-footer .logo {
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.footer .container-footer .box-footer h2 {
-  color: #cb0d3d;
-}
-
-.footer .container-footer .box-footer h1 {
-  color: #cb0d3d;
-}
-
-.footer .container-footer .box-footer hr {
-  border: none;
-  height: 1px;
-  background-color: white;
-}
-
-.footer .container-footer .box-footer a {
-  margin-top: 5px;
-  color: #ffffff;
-}
-
-.footer .container-footer .box-footer a:hover {
-  opacity: 0.8;
-  color: #cb0d3d;
-}
-
-.footer .container-footer .box-footer a .fa-brands {
-  font-size: 20px;
-}
-
-.footer .container-footer .box-footer i {
-  padding-right: 3px;
-}
-
-.footer .box-copyright {
-  max-width: 1300px;
-  margin: auto;
-  text-align: center;
-  padding: 0px 40px;
-}
-
-.footer .box-copyright p {
-  margin-top: 10px;
-  color: white;
-}
-
-.footer .box-copyright hr {
-  border: none;
-  height: 1px;
-  background-color: white;
-}
-
 /*MIXIN*/
 /*EXTENDED*/
 .btn-1, .btn, .btn-excursion, .btn-contacto {
@@ -348,7 +220,7 @@ a {
   margin: auto;
   padding-left: 30px;
   padding-right: 30px;
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: white;
   background-color: #cb0d3d;
 }
@@ -420,6 +292,62 @@ a {
   cursor: pointer;
 }
 
+/*HEADER*/
+#header {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  border-top: 6px solid #cb0d3d;
+  width: 100%;
+}
+
+#header .navbar {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+#header .navbar ul {
+  padding-top: 10px;
+  display: flex;
+}
+
+#header .navbar ul a {
+  padding: 10px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+#header .navbar ul a:hover {
+  transition: all 0.5s;
+  transform: scale(1.2);
+}
+
+#header .navbar .logo img {
+  max-width: 90%;
+}
+
+#header .navbar-toggler {
+  padding: 0.3rem 0.45rem;
+  font-size: 1.8rem;
+  transition: box-shadow 0.8s ease-in-out;
+}
+
+#header .navbar-dark .navbar-toggler-icon {
+  background-image: url(../assets/icon-burger.png);
+}
+
+#header .navbar-dark .navbar-toggler {
+  color: rgba(250, 250, 250, 0.538);
+  border-color: #0e0036;
+}
+
+#header .navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
 @media all and (min-width: 768px) {
   .mySlide .carousel-control-next,
   .mySlide .carousel-control-prev {
@@ -440,9 +368,18 @@ a {
   .mySlide .carousel-control-prev {
     left: 30px;
   }
+  .mySlide .carousel-item h1 {
+    font-size: 2.3rem;
+  }
+  .mySlide .carousel-item p {
+    font-size: 23px;
+  }
 }
 
 @media all and (min-width: 992px) {
+  .mySlide {
+    margin-top: 90px;
+  }
   .mySlide .carousel-control-next,
   .mySlide .carousel-control-prev {
     height: 50px;
@@ -452,7 +389,7 @@ a {
     font-size: 3rem;
   }
   .mySlide .carousel-item p {
-    font-size: 25px;
+    font-size: 27px;
   }
   .mySlide .carousel-control-next {
     right: 50px;
@@ -460,17 +397,24 @@ a {
   .mySlide .carousel-control-prev {
     left: 50px;
   }
-  .navbar-nav {
+  #header {
+    height: 90px;
+    position: fixed;
+  }
+  #header .navbar-nav {
     position: absolute;
     right: 0px;
+    padding-top: 0px !important;
+    padding-bottom: 0px;
   }
-  .navbar-nav ul {
+  #header .navbar-nav ul {
     display: flex;
     right: 0px;
+    font-size: 40px a;
+    font-size-padding: 10px;
   }
-  .navbar-nav ul a {
-    padding: 10px;
-    font-size: 5rem;
+  .logo img {
+    max-width: 100% !important;
   }
   .btn-1, .btn, .btn-excursion, .btn-contacto {
     font-size: 1.1rem;
@@ -482,7 +426,7 @@ a {
     font-size: 1.5rem;
   }
   .footer .container-footer .box-footer {
-    text-align: start;
+    text-align: start !important;
   }
   .bg-separador {
     height: 350px;
@@ -495,11 +439,17 @@ a {
   .bg-separador .container p {
     font-size: 23px;
   }
+  #bannerContacto {
+    margin-top: 100px !important;
+  }
   #bannerContacto .container h1 {
     font-size: 2.5rem;
   }
   #bloqueContacto {
     background-position-y: 92% !important;
+  }
+  #videoExcursion {
+    margin-top: 90px;
   }
 }
 
@@ -512,10 +462,10 @@ a {
     border-radius: 50%;
   }
   .mySlide .carousel-item h1 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
   .mySlide .carousel-item p {
-    font-size: 30px;
+    font-size: 28px;
   }
   .mySlide .carousel-control-next {
     right: 80px;
@@ -533,9 +483,10 @@ a {
     font-size: 1.5rem;
   }
   .precioDestino {
-    font-size: 20px;
+    font-size: 22px;
   }
   #videoExcursion {
+    margin-top: 90px;
     height: 910px;
   }
   #videoExcursion .container h1 {
@@ -543,6 +494,9 @@ a {
   }
   #bloqueContacto {
     background-position-y: 88% !important;
+  }
+  .btn-1, .btn, .btn-excursion, .btn-contacto {
+    font-size: 1.3rem;
   }
 }
 
@@ -561,10 +515,13 @@ a {
     font-size: 35px;
   }
   .mySlide .carousel-control-next {
-    right: 100px;
+    right: 170px;
   }
   .mySlide .carousel-control-prev {
-    left: 100px;
+    left: 170px;
+  }
+  #bannerContacto {
+    margin-top: 100px;
   }
   #bannerContacto .container h1 {
     font-size: 4rem;
@@ -583,16 +540,24 @@ a {
   .tituloSeparador h2 {
     font-size: 2.5rem;
   }
+  #videoExcursion {
+    height: 900px !important;
+  }
+  #videoExcursion .container h1 {
+    font-size: 4rem;
+  }
+  .precioDestino {
+    font-size: 25px;
+  }
 }
 
 /*Comienza pagina EXCURSIONES*/
 #videoExcursion {
   overflow: hidden;
   position: relative;
-  margin-top: 83px;
   margin-bottom: 60px;
   width: 100%;
-  height: 650px;
+  height: 750px;
   color: white;
   background: black;
 }
@@ -633,7 +598,7 @@ a {
 /*Comienza pagina CONTACTO*/
 #bannerContacto {
   position: relative;
-  margin-top: 110px;
+  margin-top: 20px;
   width: 100%;
   overflow: hidden;
 }
@@ -646,8 +611,8 @@ a {
   position: relative;
   height: 400px;
   border-radius: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 9px;
+  margin-right: 9px;
 }
 
 #bannerContacto .container {
@@ -741,6 +706,7 @@ a {
   margin-top: 5px;
   margin-bottom: 8px;
   background-color: black;
+  color: white;
 }
 
 #bloqueContacto {
@@ -748,5 +714,92 @@ a {
   background-position-y: 98%;
   background-repeat: no-repeat;
   background-image: url(../assets/bg-montañas.png);
+}
+
+/*FOOTER*/
+.footer {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  padding: 50px 0px;
+  background-color: #0e0036;
+}
+
+.footer .container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.footer .container-footer .box-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.footer .container-footer .box-footer .terms {
+  max-width: 350px;
+  margin-top: 5px;
+  color: white;
+  justify-content: center;
+}
+
+.footer .container-footer .box-footer .logo {
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer .container-footer .box-footer h2 {
+  color: #cb0d3d;
+}
+
+.footer .container-footer .box-footer h1 {
+  color: #cb0d3d;
+}
+
+.footer .container-footer .box-footer hr {
+  border: none;
+  height: 1px;
+  background-color: white;
+}
+
+.footer .container-footer .box-footer a {
+  margin-top: 5px;
+  color: #ffffff;
+}
+
+.footer .container-footer .box-footer a:hover {
+  opacity: 0.8;
+  color: #cb0d3d;
+}
+
+.footer .container-footer .box-footer a .fa-brands {
+  font-size: 20px;
+}
+
+.footer .container-footer .box-footer i {
+  padding-right: 3px;
+}
+
+.footer .box-copyright {
+  max-width: 1300px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.footer .box-copyright p {
+  margin-top: 10px;
+  color: white;
+}
+
+.footer .box-copyright hr {
+  border: none;
+  height: 1px;
+  background-color: white;
 }
 /*# sourceMappingURL=estilos.css.map */
