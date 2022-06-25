@@ -53,8 +53,10 @@
 }
 
 /*Contenido HOME*/
+/*Contenido CARRUSEL*/
 .mySlide {
   overflow: hidden;
+  margin-top: 96px;
   margin-bottom: 50px;
   border-bottom: 1px solid #000000;
 }
@@ -153,10 +155,7 @@
   }
 }
 
-.card-body span {
-  color: #cb0d3d;
-}
-
+/*SECCIÓN TÍTULOS*/
 .titulosHome {
   overflow: hidden;
   background-color: #0e0036d8;
@@ -182,6 +181,10 @@
   border: none;
   height: 2px;
   background-color: black;
+}
+
+.card-body span {
+  color: #cb0d3d;
 }
 
 /*BODY*/
@@ -211,7 +214,6 @@ a {
   color: #2900a0b5;
 }
 
-/*MIXIN*/
 /*EXTENDED*/
 .btn-1, .btn, .btn-excursion, .btn-contacto {
   border: none;
@@ -292,19 +294,26 @@ a {
   cursor: pointer;
 }
 
+.card hr {
+  height: 3px;
+}
+
 /*HEADER*/
 #header {
   position: relative;
   overflow: hidden;
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   z-index: 10;
   border-top: 6px solid #cb0d3d;
   width: 100%;
+  /*NAVBAR*/
 }
 
 #header .navbar {
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 15px;
 }
@@ -336,7 +345,7 @@ a {
 }
 
 #header .navbar-dark .navbar-toggler-icon {
-  background-image: url(../assets/icon-burger.png);
+  background-image: url(../assets/img-navbar/icon-burger.png);
 }
 
 #header .navbar-dark .navbar-toggler {
@@ -348,6 +357,7 @@ a {
   color: white;
 }
 
+/*MEDIA QUERIE PANTALLA LG*/
 @media all and (min-width: 768px) {
   .mySlide .carousel-control-next,
   .mySlide .carousel-control-prev {
@@ -376,17 +386,18 @@ a {
   }
 }
 
+/*MEDIA QUERIE PANTALLA LG*/
 @media all and (min-width: 992px) {
   .mySlide {
     margin-top: 90px;
   }
   .mySlide .carousel-control-next,
   .mySlide .carousel-control-prev {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
   .mySlide .carousel-item h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   .mySlide .carousel-item p {
     font-size: 27px;
@@ -449,7 +460,10 @@ a {
     background-position-y: 92% !important;
   }
   #videoExcursion {
-    margin-top: 90px;
+    margin-top: 90px !important;
+  }
+  #videoExcursion h1 {
+    font-size: 2.5rem;
   }
 }
 
@@ -504,27 +518,27 @@ a {
 @media all and (min-width: 1400px) {
   .mySlide .carousel-control-next,
   .mySlide .carousel-control-prev {
-    height: 60px;
-    width: 60px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
   }
   .mySlide .carousel-item h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .mySlide .carousel-item p {
-    font-size: 35px;
+    font-size: 30px;
   }
   .mySlide .carousel-control-next {
-    right: 170px;
+    right: 180px;
   }
   .mySlide .carousel-control-prev {
-    left: 170px;
+    left: 180px;
   }
   #bannerContacto {
     margin-top: 100px;
   }
   #bannerContacto .container h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .bg-separador {
     height: 350px;
@@ -555,6 +569,7 @@ a {
 #videoExcursion {
   overflow: hidden;
   position: relative;
+  margin-top: 90px;
   margin-bottom: 60px;
   width: 100%;
   height: 750px;
@@ -598,14 +613,14 @@ a {
 /*Comienza pagina CONTACTO*/
 #bannerContacto {
   position: relative;
-  margin-top: 20px;
+  margin-top: 104px;
   width: 100%;
   overflow: hidden;
 }
 
 #bannerContacto .banner-item {
   background: black;
-  background-image: url("../assets/destino.jpg");
+  background-image: url("../assets/img-contacto/destino.jpg");
   background-position-y: 50%;
   background-size: cover;
   position: relative;
@@ -649,6 +664,7 @@ a {
   }
 }
 
+/*BLOQUE INFORMACIÓN*/
 .bloqueInfo {
   margin-top: 75px;
 }
@@ -713,7 +729,7 @@ a {
   background-size: contain;
   background-position-y: 98%;
   background-repeat: no-repeat;
-  background-image: url(../assets/bg-montañas.png);
+  background-image: url(../assets/img-contacto/bg-montañas.png);
 }
 
 /*FOOTER*/

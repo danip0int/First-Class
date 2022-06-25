@@ -1,3 +1,5 @@
+
+/*MEDIA QUERIE PANTALLA LG*/
 @media all and (min-width: 768px) {
   .mySlide {
     .carousel-control-next,
@@ -27,18 +29,18 @@
     }
   }
 }
-// /*MEDIA QUERIE PANTALLA LG*/
 
+/*MEDIA QUERIE PANTALLA LG*/
 @media all and (min-width: 992px) {
   .mySlide {
     margin-top: 90px;
     .carousel-control-next,
     .carousel-control-prev {
-      height: 50px;
-      width: 50px;
+      height: 40px;
+      width: 40px;
     }
     .carousel-item h1 {
-      font-size: 3rem;
+      font-size: 2.8rem;
     }
     .carousel-item p {
       font-size: 27px;
@@ -113,11 +115,14 @@
     background-position-y: 92% !important;
   }
   #videoExcursion {
-    margin-top: 90px;
+    margin-top: 90px!important;
+    h1{
+      font-size: 2.5rem;
+    }
   }
 }
-/*MEDIA QUERIE PANTALLA XL*/
 
+/*MEDIA QUERIE PANTALLA XL*/
 @media all and (min-width: 1200px) {
   .mySlide {
     .carousel-control-next,
@@ -169,33 +174,32 @@
 }
 
 /*MEDIA QUERIE PANTALLA XXL*/
-
 @media all and (min-width: 1400px) {
   .mySlide {
     .carousel-control-next,
     .carousel-control-prev {
-      height: 60px;
-      width: 60px;
+      height: 45px;
+      width: 45px;
       border-radius: 50%;
     }
     .carousel-item h1 {
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
     .carousel-item p {
-      font-size: 35px;
+      font-size: 30px;
     }
     .carousel-control-next {
-      right: 170px;
+      right: 180px;
     }
     .carousel-control-prev {
-      left: 170px;
+      left: 180px;
     }
   }
   #bannerContacto {
     margin-top: 100px;
     .container {
       h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
       }
     }
   }
